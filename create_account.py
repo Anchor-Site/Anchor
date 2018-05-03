@@ -8,7 +8,7 @@ import argparse
 
 #USAGE: python create_account.py --account_name [name] --account_email [email]
 
-#NOTE: This code will was used to create a number of test accounts on the Anchor-Test 
+#NOTE: This code was used to create a number of test accounts on the Anchor-Test 
 #organization, however the organization is not allowed to create any additional accounts 
 #and this will now return an error when run. AWS recommends contacting customer service
 #to fix this issue, but it may be a better idea to just switch over to an alternative
