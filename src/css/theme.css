@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700i');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Fira Mono';
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-theme {
+    color: rgba(255, 255, 0, 1);
+    background-color: rgba(34, 34, 34, 1);
+    padding: 1rem;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 1rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article > header {
+    display: flex;
+    flex-direction: row;
+}
+
+article > header > h1 {
+    flex-grow: 1;
+}
+
+article > header > h4 {
+    
+}
+
+article > p {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -0.2rem;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.1s ease-in-out 0s;
+}
+
+a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.site-header div {
+    max-width: 75rem;
+    margin: auto;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.site-header h1 {
+    flex-grow: 1;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+}
+
+.site-header a {
+    font-size: 1.5rem;
+    margin: 1rem;
+    transition: color 0.1s ease-in-out;
+    color: rgba(255, 255, 255, 1);
+}
+
+.site-header a:before {
+    background-color: rgba(255, 255, 0, 1);
+}
+
+.site-header a:hover {
+    color: rgba(255, 255, 0, 1);
+}
+
+aside {
+    min-width: 20rem;
+    width: 20rem;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex: 1 0 auto;
+    max-width: 75rem;
+    margin: auto;
+}
+
+main > #article-container {
+    flex-grow: 1;
+}
+
+footer {
+    flex: 0;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#anchor-add-post:hover {
+    color: rgba(0, 255, 255, 1);
+}
+
+#anchor-add-post:before {
+    background-color: rgba(0, 255, 255, 1);
+}
+
+#anchor-publish:hover {
+    color: rgba(255, 0, 255, 1);
+}
+
+#anchor-publish:before {
+    background-color: rgba(255, 0, 255, 1);
+}
+
+#anchor-discard:hover {
+    color: rgba(255, 0, 0, 1);
+}
+
+#anchor-discard:before {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+/* .site-logo {
+    color: rgba(255, 255, 0, 1);
+}
+
+.menu-item:hover {
+    color: rgba(255, 255, 0, 1);
+} */
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Arvo:400,400i');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arvo";
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+header, footer, main, aside, article {
+    padding: 1rem;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0.5rem;
+}
+
+header, footer {
+    background-color: black;
+    color: rgba(224, 0, 0, 1);
+}
+
+h1 {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 6rem;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+aside {
+    border: 1px solid;
+    width: 400px;
+}
+
+footer {
+    flex: 0;
+    flex-shrink: 0;
+    text-align: center;
+} */
